@@ -1,0 +1,1409 @@
+Version 4.0 HI-TECH Software Intermediate Code
+[p mainexit ]
+"71 ./mcc_generated_files/mcc.h
+[; ;./mcc_generated_files/mcc.h: 71: void SYSTEM_Initialize(void);
+[v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
+"22 ./i2c_lcd.h
+[; ;./i2c_lcd.h: 22: void LCD_Init(void);
+[v _LCD_Init `(v ~T0 @X0 0 ef ]
+"341 C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 341:     struct {
+[s S31 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S31 . IOCIF INTF TMR0IF IOCIE INTE TMR0IE PEIE GIE ]
+"351
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 351:     struct {
+[s S32 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S32 . . T0IF . T0IE ]
+"340
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 340: typedef union {
+[u S30 `S31 1 `S32 1 ]
+[n S30 . . . ]
+"358
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 358: extern volatile INTCONbits_t INTCONbits __attribute__((address(0x00B)));
+[v _INTCONbits `VS30 ~T0 @X0 0 e@11 ]
+"28 ./i2c_lcd.h
+[; ;./i2c_lcd.h: 28: void LCD_Typewriter(uint8_t row, uint8_t col, const char *str, uint16_t delay_ms_per_char);
+[v _LCD_Typewriter `(v ~T0 @X0 0 ef4`uc`uc`*Cuc`us ]
+"38 C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 38: __asm("INDF0 equ 00h");
+[; <" INDF0 equ 00h ;# ">
+"58
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 58: __asm("INDF1 equ 01h");
+[; <" INDF1 equ 01h ;# ">
+"78
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 78: __asm("PCL equ 02h");
+[; <" PCL equ 02h ;# ">
+"98
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 98: __asm("STATUS equ 03h");
+[; <" STATUS equ 03h ;# ">
+"161
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 161: __asm("FSR0L equ 04h");
+[; <" FSR0L equ 04h ;# ">
+"181
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 181: __asm("FSR0H equ 05h");
+[; <" FSR0H equ 05h ;# ">
+"205
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 205: __asm("FSR1L equ 06h");
+[; <" FSR1L equ 06h ;# ">
+"225
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 225: __asm("FSR1H equ 07h");
+[; <" FSR1H equ 07h ;# ">
+"245
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 245: __asm("BSR equ 08h");
+[; <" BSR equ 08h ;# ">
+"297
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 297: __asm("WREG equ 09h");
+[; <" WREG equ 09h ;# ">
+"317
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 317: __asm("PCLATH equ 0Ah");
+[; <" PCLATH equ 0Ah ;# ">
+"337
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 337: __asm("INTCON equ 0Bh");
+[; <" INTCON equ 0Bh ;# ">
+"415
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 415: __asm("PORTA equ 0Ch");
+[; <" PORTA equ 0Ch ;# ">
+"465
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 465: __asm("PORTB equ 0Dh");
+[; <" PORTB equ 0Dh ;# ">
+"504
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 504: __asm("PORTC equ 0Eh");
+[; <" PORTC equ 0Eh ;# ">
+"566
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 566: __asm("PIR1 equ 010h");
+[; <" PIR1 equ 010h ;# ">
+"628
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 628: __asm("PIR2 equ 011h");
+[; <" PIR2 equ 011h ;# ">
+"685
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 685: __asm("PIR3 equ 012h");
+[; <" PIR3 equ 012h ;# ">
+"735
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 735: __asm("PIR4 equ 013h");
+[; <" PIR4 equ 013h ;# ">
+"797
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 797: __asm("PIR5 equ 014h");
+[; <" PIR5 equ 014h ;# ">
+"854
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 854: __asm("TMR0 equ 015h");
+[; <" TMR0 equ 015h ;# ">
+"874
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 874: __asm("TMR1 equ 016h");
+[; <" TMR1 equ 016h ;# ">
+"881
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 881: __asm("TMR1L equ 016h");
+[; <" TMR1L equ 016h ;# ">
+"901
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 901: __asm("TMR1H equ 017h");
+[; <" TMR1H equ 017h ;# ">
+"921
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 921: __asm("T1CON equ 018h");
+[; <" T1CON equ 018h ;# ">
+"988
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 988: __asm("T1GCON equ 019h");
+[; <" T1GCON equ 019h ;# ">
+"1058
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 1058: __asm("T2TMR equ 01Ah");
+[; <" T2TMR equ 01Ah ;# ">
+"1063
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 1063: __asm("TMR2 equ 01Ah");
+[; <" TMR2 equ 01Ah ;# ">
+"1112
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 1112: __asm("T2PR equ 01Bh");
+[; <" T2PR equ 01Bh ;# ">
+"1117
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 1117: __asm("PR2 equ 01Bh");
+[; <" PR2 equ 01Bh ;# ">
+"1166
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 1166: __asm("T2CON equ 01Ch");
+[; <" T2CON equ 01Ch ;# ">
+"1312
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 1312: __asm("T2HLT equ 01Dh");
+[; <" T2HLT equ 01Dh ;# ">
+"1440
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 1440: __asm("T2CLKCON equ 01Eh");
+[; <" T2CLKCON equ 01Eh ;# ">
+"1520
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 1520: __asm("T2RST equ 01Fh");
+[; <" T2RST equ 01Fh ;# ">
+"1600
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 1600: __asm("TRISA equ 08Ch");
+[; <" TRISA equ 08Ch ;# ">
+"1650
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 1650: __asm("TRISB equ 08Dh");
+[; <" TRISB equ 08Dh ;# ">
+"1689
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 1689: __asm("TRISC equ 08Eh");
+[; <" TRISC equ 08Eh ;# ">
+"1751
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 1751: __asm("PIE1 equ 090h");
+[; <" PIE1 equ 090h ;# ">
+"1813
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 1813: __asm("PIE2 equ 091h");
+[; <" PIE2 equ 091h ;# ">
+"1870
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 1870: __asm("PIE3 equ 092h");
+[; <" PIE3 equ 092h ;# ">
+"1920
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 1920: __asm("PIE4 equ 093h");
+[; <" PIE4 equ 093h ;# ">
+"1982
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 1982: __asm("PIE5 equ 094h");
+[; <" PIE5 equ 094h ;# ">
+"2039
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 2039: __asm("OPTION_REG equ 095h");
+[; <" OPTION_REG equ 095h ;# ">
+"2122
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 2122: __asm("PCON equ 096h");
+[; <" PCON equ 096h ;# ">
+"2184
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 2184: __asm("OSCTUNE equ 098h");
+[; <" OSCTUNE equ 098h ;# ">
+"2242
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 2242: __asm("OSCCON equ 099h");
+[; <" OSCCON equ 099h ;# ">
+"2314
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 2314: __asm("OSCSTAT equ 09Ah");
+[; <" OSCSTAT equ 09Ah ;# ">
+"2370
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 2370: __asm("ADRES equ 09Bh");
+[; <" ADRES equ 09Bh ;# ">
+"2377
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 2377: __asm("ADRESL equ 09Bh");
+[; <" ADRESL equ 09Bh ;# ">
+"2397
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 2397: __asm("ADRESH equ 09Ch");
+[; <" ADRESH equ 09Ch ;# ">
+"2417
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 2417: __asm("ADCON0 equ 09Dh");
+[; <" ADCON0 equ 09Dh ;# ">
+"2497
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 2497: __asm("ADCON1 equ 09Eh");
+[; <" ADCON1 equ 09Eh ;# ">
+"2563
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 2563: __asm("ADCON2 equ 09Fh");
+[; <" ADCON2 equ 09Fh ;# ">
+"2617
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 2617: __asm("LATA equ 010Ch");
+[; <" LATA equ 010Ch ;# ">
+"2667
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 2667: __asm("LATB equ 010Dh");
+[; <" LATB equ 010Dh ;# ">
+"2706
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 2706: __asm("LATC equ 010Eh");
+[; <" LATC equ 010Eh ;# ">
+"2768
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 2768: __asm("CM1CON0 equ 0111h");
+[; <" CM1CON0 equ 0111h ;# ">
+"2820
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 2820: __asm("CM1CON1 equ 0112h");
+[; <" CM1CON1 equ 0112h ;# ">
+"2892
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 2892: __asm("CM2CON0 equ 0113h");
+[; <" CM2CON0 equ 0113h ;# ">
+"2944
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 2944: __asm("CM2CON1 equ 0114h");
+[; <" CM2CON1 equ 0114h ;# ">
+"3016
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 3016: __asm("CMOUT equ 0115h");
+[; <" CMOUT equ 0115h ;# ">
+"3042
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 3042: __asm("BORCON equ 0116h");
+[; <" BORCON equ 0116h ;# ">
+"3075
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 3075: __asm("FVRCON equ 0117h");
+[; <" FVRCON equ 0117h ;# ">
+"3151
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 3151: __asm("DAC1CON0 equ 0118h");
+[; <" DAC1CON0 equ 0118h ;# ">
+"3201
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 3201: __asm("DAC1CON1 equ 0119h");
+[; <" DAC1CON1 equ 0119h ;# ">
+"3271
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 3271: __asm("ZCD1CON equ 011Ch");
+[; <" ZCD1CON equ 011Ch ;# ">
+"3317
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 3317: __asm("ANSELA equ 018Ch");
+[; <" ANSELA equ 018Ch ;# ">
+"3364
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 3364: __asm("ANSELB equ 018Dh");
+[; <" ANSELB equ 018Dh ;# ">
+"3403
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 3403: __asm("ANSELC equ 018Eh");
+[; <" ANSELC equ 018Eh ;# ">
+"3462
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 3462: __asm("PMADR equ 0191h");
+[; <" PMADR equ 0191h ;# ">
+"3469
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 3469: __asm("PMADRL equ 0191h");
+[; <" PMADRL equ 0191h ;# ">
+"3489
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 3489: __asm("PMADRH equ 0192h");
+[; <" PMADRH equ 0192h ;# ">
+"3509
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 3509: __asm("PMDAT equ 0193h");
+[; <" PMDAT equ 0193h ;# ">
+"3516
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 3516: __asm("PMDATL equ 0193h");
+[; <" PMDATL equ 0193h ;# ">
+"3536
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 3536: __asm("PMDATH equ 0194h");
+[; <" PMDATH equ 0194h ;# ">
+"3556
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 3556: __asm("PMCON1 equ 0195h");
+[; <" PMCON1 equ 0195h ;# ">
+"3612
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 3612: __asm("PMCON2 equ 0196h");
+[; <" PMCON2 equ 0196h ;# ">
+"3632
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 3632: __asm("VREGCON equ 0197h");
+[; <" VREGCON equ 0197h ;# ">
+"3666
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 3666: __asm("RC1REG equ 0199h");
+[; <" RC1REG equ 0199h ;# ">
+"3671
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 3671: __asm("RCREG equ 0199h");
+[; <" RCREG equ 0199h ;# ">
+"3675
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 3675: __asm("RCREG1 equ 0199h");
+[; <" RCREG1 equ 0199h ;# ">
+"3720
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 3720: __asm("TX1REG equ 019Ah");
+[; <" TX1REG equ 019Ah ;# ">
+"3725
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 3725: __asm("TXREG1 equ 019Ah");
+[; <" TXREG1 equ 019Ah ;# ">
+"3729
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 3729: __asm("TXREG equ 019Ah");
+[; <" TXREG equ 019Ah ;# ">
+"3774
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 3774: __asm("SP1BRG equ 019Bh");
+[; <" SP1BRG equ 019Bh ;# ">
+"3779
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 3779: __asm("SPBRG equ 019Bh");
+[; <" SPBRG equ 019Bh ;# ">
+"3786
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 3786: __asm("SP1BRGL equ 019Bh");
+[; <" SP1BRGL equ 019Bh ;# ">
+"3791
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 3791: __asm("SPBRG1 equ 019Bh");
+[; <" SPBRG1 equ 019Bh ;# ">
+"3795
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 3795: __asm("SPBRGL equ 019Bh");
+[; <" SPBRGL equ 019Bh ;# ">
+"3840
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 3840: __asm("SP1BRGH equ 019Ch");
+[; <" SP1BRGH equ 019Ch ;# ">
+"3845
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 3845: __asm("SPBRGH equ 019Ch");
+[; <" SPBRGH equ 019Ch ;# ">
+"3849
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 3849: __asm("SPBRGH1 equ 019Ch");
+[; <" SPBRGH1 equ 019Ch ;# ">
+"3894
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 3894: __asm("RC1STA equ 019Dh");
+[; <" RC1STA equ 019Dh ;# ">
+"3899
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 3899: __asm("RCSTA1 equ 019Dh");
+[; <" RCSTA1 equ 019Dh ;# ">
+"3903
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 3903: __asm("RCSTA equ 019Dh");
+[; <" RCSTA equ 019Dh ;# ">
+"4074
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 4074: __asm("TX1STA equ 019Eh");
+[; <" TX1STA equ 019Eh ;# ">
+"4079
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 4079: __asm("TXSTA1 equ 019Eh");
+[; <" TXSTA1 equ 019Eh ;# ">
+"4083
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 4083: __asm("TXSTA equ 019Eh");
+[; <" TXSTA equ 019Eh ;# ">
+"4254
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 4254: __asm("BAUD1CON equ 019Fh");
+[; <" BAUD1CON equ 019Fh ;# ">
+"4259
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 4259: __asm("BAUDCON1 equ 019Fh");
+[; <" BAUDCON1 equ 019Fh ;# ">
+"4263
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 4263: __asm("BAUDCTL1 equ 019Fh");
+[; <" BAUDCTL1 equ 019Fh ;# ">
+"4267
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 4267: __asm("BAUDCON equ 019Fh");
+[; <" BAUDCON equ 019Fh ;# ">
+"4271
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 4271: __asm("BAUDCTL equ 019Fh");
+[; <" BAUDCTL equ 019Fh ;# ">
+"4500
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 4500: __asm("WPUA equ 020Ch");
+[; <" WPUA equ 020Ch ;# ">
+"4558
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 4558: __asm("WPUB equ 020Dh");
+[; <" WPUB equ 020Dh ;# ">
+"4597
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 4597: __asm("WPUC equ 020Eh");
+[; <" WPUC equ 020Eh ;# ">
+"4667
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 4667: __asm("SSP1BUF equ 0211h");
+[; <" SSP1BUF equ 0211h ;# ">
+"4672
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 4672: __asm("SSPBUF equ 0211h");
+[; <" SSPBUF equ 0211h ;# ">
+"4921
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 4921: __asm("SSP1ADD equ 0212h");
+[; <" SSP1ADD equ 0212h ;# ">
+"4926
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 4926: __asm("SSPADD equ 0212h");
+[; <" SSPADD equ 0212h ;# ">
+"5175
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 5175: __asm("SSP1MSK equ 0213h");
+[; <" SSP1MSK equ 0213h ;# ">
+"5180
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 5180: __asm("SSPMSK equ 0213h");
+[; <" SSPMSK equ 0213h ;# ">
+"5429
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 5429: __asm("SSP1STAT equ 0214h");
+[; <" SSP1STAT equ 0214h ;# ">
+"5434
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 5434: __asm("SSPSTAT equ 0214h");
+[; <" SSPSTAT equ 0214h ;# ">
+"5551
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 5551: __asm("SSP1CON1 equ 0215h");
+[; <" SSP1CON1 equ 0215h ;# ">
+"5556
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 5556: __asm("SSPCON equ 0215h");
+[; <" SSPCON equ 0215h ;# ">
+"5560
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 5560: __asm("SSPCON1 equ 0215h");
+[; <" SSPCON1 equ 0215h ;# ">
+"5564
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 5564: __asm("SSP1CON equ 0215h");
+[; <" SSP1CON equ 0215h ;# ">
+"5821
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 5821: __asm("SSP1CON2 equ 0216h");
+[; <" SSP1CON2 equ 0216h ;# ">
+"5826
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 5826: __asm("SSPCON2 equ 0216h");
+[; <" SSPCON2 equ 0216h ;# ">
+"5943
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 5943: __asm("SSP1CON3 equ 0217h");
+[; <" SSP1CON3 equ 0217h ;# ">
+"5948
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 5948: __asm("SSPCON3 equ 0217h");
+[; <" SSPCON3 equ 0217h ;# ">
+"6065
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 6065: __asm("ODCONA equ 028Ch");
+[; <" ODCONA equ 028Ch ;# ">
+"6110
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 6110: __asm("ODCONB equ 028Dh");
+[; <" ODCONB equ 028Dh ;# ">
+"6149
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 6149: __asm("ODCONC equ 028Eh");
+[; <" ODCONC equ 028Eh ;# ">
+"6211
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 6211: __asm("CCPR1 equ 0291h");
+[; <" CCPR1 equ 0291h ;# ">
+"6218
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 6218: __asm("CCPR1L equ 0291h");
+[; <" CCPR1L equ 0291h ;# ">
+"6238
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 6238: __asm("CCPR1H equ 0292h");
+[; <" CCPR1H equ 0292h ;# ">
+"6258
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 6258: __asm("CCP1CON equ 0293h");
+[; <" CCP1CON equ 0293h ;# ">
+"6376
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 6376: __asm("CCP1CAP equ 0294h");
+[; <" CCP1CAP equ 0294h ;# ">
+"6444
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 6444: __asm("CCPR2 equ 0298h");
+[; <" CCPR2 equ 0298h ;# ">
+"6451
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 6451: __asm("CCPR2L equ 0298h");
+[; <" CCPR2L equ 0298h ;# ">
+"6471
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 6471: __asm("CCPR2H equ 0299h");
+[; <" CCPR2H equ 0299h ;# ">
+"6491
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 6491: __asm("CCP2CON equ 029Ah");
+[; <" CCP2CON equ 029Ah ;# ">
+"6609
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 6609: __asm("CCP2CAP equ 029Bh");
+[; <" CCP2CAP equ 029Bh ;# ">
+"6677
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 6677: __asm("CCPTMRS equ 029Eh");
+[; <" CCPTMRS equ 029Eh ;# ">
+"6765
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 6765: __asm("SLRCONA equ 030Ch");
+[; <" SLRCONA equ 030Ch ;# ">
+"6810
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 6810: __asm("SLRCONB equ 030Dh");
+[; <" SLRCONB equ 030Dh ;# ">
+"6849
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 6849: __asm("SLRCONC equ 030Eh");
+[; <" SLRCONC equ 030Eh ;# ">
+"6911
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 6911: __asm("INLVLA equ 038Ch");
+[; <" INLVLA equ 038Ch ;# ">
+"6961
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 6961: __asm("INLVLB equ 038Dh");
+[; <" INLVLB equ 038Dh ;# ">
+"7000
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 7000: __asm("INLVLC equ 038Eh");
+[; <" INLVLC equ 038Eh ;# ">
+"7062
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 7062: __asm("IOCAP equ 0391h");
+[; <" IOCAP equ 0391h ;# ">
+"7120
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 7120: __asm("IOCAN equ 0392h");
+[; <" IOCAN equ 0392h ;# ">
+"7178
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 7178: __asm("IOCAF equ 0393h");
+[; <" IOCAF equ 0393h ;# ">
+"7236
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 7236: __asm("IOCBP equ 0394h");
+[; <" IOCBP equ 0394h ;# ">
+"7275
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 7275: __asm("IOCBN equ 0395h");
+[; <" IOCBN equ 0395h ;# ">
+"7314
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 7314: __asm("IOCBF equ 0396h");
+[; <" IOCBF equ 0396h ;# ">
+"7353
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 7353: __asm("IOCCP equ 0397h");
+[; <" IOCCP equ 0397h ;# ">
+"7415
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 7415: __asm("IOCCN equ 0398h");
+[; <" IOCCN equ 0398h ;# ">
+"7477
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 7477: __asm("IOCCF equ 0399h");
+[; <" IOCCF equ 0399h ;# ">
+"7539
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 7539: __asm("HIDRVC equ 040Eh");
+[; <" HIDRVC equ 040Eh ;# ">
+"7566
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 7566: __asm("T4TMR equ 0413h");
+[; <" T4TMR equ 0413h ;# ">
+"7571
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 7571: __asm("TMR4 equ 0413h");
+[; <" TMR4 equ 0413h ;# ">
+"7620
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 7620: __asm("T4PR equ 0414h");
+[; <" T4PR equ 0414h ;# ">
+"7625
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 7625: __asm("PR4 equ 0414h");
+[; <" PR4 equ 0414h ;# ">
+"7674
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 7674: __asm("T4CON equ 0415h");
+[; <" T4CON equ 0415h ;# ">
+"7820
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 7820: __asm("T4HLT equ 0416h");
+[; <" T4HLT equ 0416h ;# ">
+"7948
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 7948: __asm("T4CLKCON equ 0417h");
+[; <" T4CLKCON equ 0417h ;# ">
+"8028
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 8028: __asm("T4RST equ 0418h");
+[; <" T4RST equ 0418h ;# ">
+"8108
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 8108: __asm("T6TMR equ 041Ah");
+[; <" T6TMR equ 041Ah ;# ">
+"8113
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 8113: __asm("TMR6 equ 041Ah");
+[; <" TMR6 equ 041Ah ;# ">
+"8162
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 8162: __asm("T6PR equ 041Bh");
+[; <" T6PR equ 041Bh ;# ">
+"8167
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 8167: __asm("PR6 equ 041Bh");
+[; <" PR6 equ 041Bh ;# ">
+"8216
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 8216: __asm("T6CON equ 041Ch");
+[; <" T6CON equ 041Ch ;# ">
+"8362
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 8362: __asm("T6HLT equ 041Dh");
+[; <" T6HLT equ 041Dh ;# ">
+"8490
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 8490: __asm("T6CLKCON equ 041Eh");
+[; <" T6CLKCON equ 041Eh ;# ">
+"8570
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 8570: __asm("T6RST equ 041Fh");
+[; <" T6RST equ 041Fh ;# ">
+"8650
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 8650: __asm("TMR3L equ 0493h");
+[; <" TMR3L equ 0493h ;# ">
+"8670
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 8670: __asm("TMR3H equ 0494h");
+[; <" TMR3H equ 0494h ;# ">
+"8690
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 8690: __asm("T3CON equ 0495h");
+[; <" T3CON equ 0495h ;# ">
+"8757
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 8757: __asm("T3GCON equ 0496h");
+[; <" T3GCON equ 0496h ;# ">
+"8827
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 8827: __asm("TMR5L equ 049Ah");
+[; <" TMR5L equ 049Ah ;# ">
+"8847
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 8847: __asm("TMR5H equ 049Bh");
+[; <" TMR5H equ 049Bh ;# ">
+"8867
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 8867: __asm("T5CON equ 049Ch");
+[; <" T5CON equ 049Ch ;# ">
+"8934
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 8934: __asm("T5GCON equ 049Dh");
+[; <" T5GCON equ 049Dh ;# ">
+"9004
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 9004: __asm("PID1SET equ 058Ch");
+[; <" PID1SET equ 058Ch ;# ">
+"9011
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 9011: __asm("PID1SETL equ 058Ch");
+[; <" PID1SETL equ 058Ch ;# ">
+"9123
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 9123: __asm("PID1SETH equ 058Dh");
+[; <" PID1SETH equ 058Dh ;# ">
+"9235
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 9235: __asm("PID1IN equ 058Eh");
+[; <" PID1IN equ 058Eh ;# ">
+"9242
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 9242: __asm("PID1INL equ 058Eh");
+[; <" PID1INL equ 058Eh ;# ">
+"9354
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 9354: __asm("PID1INH equ 058Fh");
+[; <" PID1INH equ 058Fh ;# ">
+"9466
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 9466: __asm("PID1K1 equ 0590h");
+[; <" PID1K1 equ 0590h ;# ">
+"9473
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 9473: __asm("PID1K1L equ 0590h");
+[; <" PID1K1L equ 0590h ;# ">
+"9585
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 9585: __asm("PID1K1H equ 0591h");
+[; <" PID1K1H equ 0591h ;# ">
+"9697
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 9697: __asm("PID1K2 equ 0592h");
+[; <" PID1K2 equ 0592h ;# ">
+"9704
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 9704: __asm("PID1K2L equ 0592h");
+[; <" PID1K2L equ 0592h ;# ">
+"9816
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 9816: __asm("PID1K2H equ 0593h");
+[; <" PID1K2H equ 0593h ;# ">
+"9928
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 9928: __asm("PID1K3 equ 0594h");
+[; <" PID1K3 equ 0594h ;# ">
+"9935
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 9935: __asm("PID1K3L equ 0594h");
+[; <" PID1K3L equ 0594h ;# ">
+"10047
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 10047: __asm("PID1K3H equ 0595h");
+[; <" PID1K3H equ 0595h ;# ">
+"10158
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 10158: __asm("PID1OUT equ 0596h");
+[; <" PID1OUT equ 0596h ;# ">
+"10165
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 10165: __asm("PID1OUTLL equ 0596h");
+[; <" PID1OUTLL equ 0596h ;# ">
+"10277
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 10277: __asm("PID1OUTLH equ 0597h");
+[; <" PID1OUTLH equ 0597h ;# ">
+"10389
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 10389: __asm("PID1OUTHL equ 0598h");
+[; <" PID1OUTHL equ 0598h ;# ">
+"10501
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 10501: __asm("PID1OUTHH equ 0599h");
+[; <" PID1OUTHH equ 0599h ;# ">
+"10613
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 10613: __asm("PID1OUTU equ 059Ah");
+[; <" PID1OUTU equ 059Ah ;# ">
+"10679
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 10679: __asm("PID1Z1 equ 059Bh");
+[; <" PID1Z1 equ 059Bh ;# ">
+"10686
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 10686: __asm("PID1Z1L equ 059Bh");
+[; <" PID1Z1L equ 059Bh ;# ">
+"10798
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 10798: __asm("PID1Z1H equ 059Ch");
+[; <" PID1Z1H equ 059Ch ;# ">
+"10910
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 10910: __asm("PID1Z1U equ 059Dh");
+[; <" PID1Z1U equ 059Dh ;# ">
+"10940
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 10940: __asm("PID1Z2 equ 060Ch");
+[; <" PID1Z2 equ 060Ch ;# ">
+"10947
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 10947: __asm("PID1Z2L equ 060Ch");
+[; <" PID1Z2L equ 060Ch ;# ">
+"11059
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 11059: __asm("PID1Z2H equ 060Dh");
+[; <" PID1Z2H equ 060Dh ;# ">
+"11171
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 11171: __asm("PID1Z2U equ 060Eh");
+[; <" PID1Z2U equ 060Eh ;# ">
+"11198
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 11198: __asm("PID1ACC equ 060Fh");
+[; <" PID1ACC equ 060Fh ;# ">
+"11205
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 11205: __asm("PID1ACCLL equ 060Fh");
+[; <" PID1ACCLL equ 060Fh ;# ">
+"11317
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 11317: __asm("PID1ACCLH equ 0610h");
+[; <" PID1ACCLH equ 0610h ;# ">
+"11429
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 11429: __asm("PID1ACCHL equ 0611h");
+[; <" PID1ACCHL equ 0611h ;# ">
+"11541
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 11541: __asm("PID1ACCHH equ 0612h");
+[; <" PID1ACCHH equ 0612h ;# ">
+"11653
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 11653: __asm("PID1ACCU equ 0613h");
+[; <" PID1ACCU equ 0613h ;# ">
+"11705
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 11705: __asm("PID1CON equ 0614h");
+[; <" PID1CON equ 0614h ;# ">
+"11799
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 11799: __asm("PWM3DC equ 0617h");
+[; <" PWM3DC equ 0617h ;# ">
+"11806
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 11806: __asm("PWM3DCL equ 0617h");
+[; <" PWM3DCL equ 0617h ;# ">
+"11872
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 11872: __asm("PWM3DCH equ 0618h");
+[; <" PWM3DCH equ 0618h ;# ">
+"12042
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 12042: __asm("PWM3CON equ 0619h");
+[; <" PWM3CON equ 0619h ;# ">
+"12098
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 12098: __asm("PWM4DC equ 061Ah");
+[; <" PWM4DC equ 061Ah ;# ">
+"12105
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 12105: __asm("PWM4DCL equ 061Ah");
+[; <" PWM4DCL equ 061Ah ;# ">
+"12171
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 12171: __asm("PWM4DCH equ 061Bh");
+[; <" PWM4DCH equ 061Bh ;# ">
+"12341
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 12341: __asm("PWM4CON equ 061Ch");
+[; <" PWM4CON equ 061Ch ;# ">
+"12397
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 12397: __asm("CWG1DBR equ 0691h");
+[; <" CWG1DBR equ 0691h ;# ">
+"12501
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 12501: __asm("CWG1DBF equ 0692h");
+[; <" CWG1DBF equ 0692h ;# ">
+"12605
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 12605: __asm("CWG1AS0 equ 0693h");
+[; <" CWG1AS0 equ 0693h ;# ">
+"12725
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 12725: __asm("CWG1AS1 equ 0694h");
+[; <" CWG1AS1 equ 0694h ;# ">
+"12815
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 12815: __asm("CWG1OCON0 equ 0695h");
+[; <" CWG1OCON0 equ 0695h ;# ">
+"12927
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 12927: __asm("CWG1CON0 equ 0696h");
+[; <" CWG1CON0 equ 0696h ;# ">
+"13028
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 13028: __asm("CWG1CON1 equ 0697h");
+[; <" CWG1CON1 equ 0697h ;# ">
+"13106
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 13106: __asm("CWG1CLKCON equ 0699h");
+[; <" CWG1CLKCON equ 0699h ;# ">
+"13134
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 13134: __asm("CWG1ISM equ 069Ah");
+[; <" CWG1ISM equ 069Ah ;# ">
+"13214
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 13214: __asm("WDTCON0 equ 0711h");
+[; <" WDTCON0 equ 0711h ;# ">
+"13289
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 13289: __asm("WDTCON1 equ 0712h");
+[; <" WDTCON1 equ 0712h ;# ">
+"13383
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 13383: __asm("WDTPSL equ 0713h");
+[; <" WDTPSL equ 0713h ;# ">
+"13511
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 13511: __asm("WDTPSH equ 0714h");
+[; <" WDTPSH equ 0714h ;# ">
+"13639
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 13639: __asm("WDTTMR equ 0715h");
+[; <" WDTTMR equ 0715h ;# ">
+"13727
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 13727: __asm("SCANLADR equ 0718h");
+[; <" SCANLADR equ 0718h ;# ">
+"13734
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 13734: __asm("SCANLADRL equ 0718h");
+[; <" SCANLADRL equ 0718h ;# ">
+"13862
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 13862: __asm("SCANLADRH equ 0719h");
+[; <" SCANLADRH equ 0719h ;# ">
+"13990
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 13990: __asm("SCANHADR equ 071Ah");
+[; <" SCANHADR equ 071Ah ;# ">
+"13997
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 13997: __asm("SCANHADRL equ 071Ah");
+[; <" SCANHADRL equ 071Ah ;# ">
+"14125
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 14125: __asm("SCANHADRH equ 071Bh");
+[; <" SCANHADRH equ 071Bh ;# ">
+"14253
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 14253: __asm("SCANCON0 equ 071Ch");
+[; <" SCANCON0 equ 071Ch ;# ">
+"14366
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 14366: __asm("SCANTRIG equ 071Dh");
+[; <" SCANTRIG equ 071Dh ;# ">
+"14446
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 14446: __asm("CRCDAT equ 0791h");
+[; <" CRCDAT equ 0791h ;# ">
+"14453
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 14453: __asm("CRCDATL equ 0791h");
+[; <" CRCDATL equ 0791h ;# ">
+"14581
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 14581: __asm("CRCDATH equ 0792h");
+[; <" CRCDATH equ 0792h ;# ">
+"14709
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 14709: __asm("CRCACC equ 0793h");
+[; <" CRCACC equ 0793h ;# ">
+"14716
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 14716: __asm("CRCACCL equ 0793h");
+[; <" CRCACCL equ 0793h ;# ">
+"14844
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 14844: __asm("CRCACCH equ 0794h");
+[; <" CRCACCH equ 0794h ;# ">
+"14972
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 14972: __asm("CRCSHIFT equ 0795h");
+[; <" CRCSHIFT equ 0795h ;# ">
+"14979
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 14979: __asm("CRCSHIFTL equ 0795h");
+[; <" CRCSHIFTL equ 0795h ;# ">
+"15107
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 15107: __asm("CRCSHIFTH equ 0796h");
+[; <" CRCSHIFTH equ 0796h ;# ">
+"15235
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 15235: __asm("CRCXOR equ 0797h");
+[; <" CRCXOR equ 0797h ;# ">
+"15242
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 15242: __asm("CRCXORL equ 0797h");
+[; <" CRCXORL equ 0797h ;# ">
+"15344
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 15344: __asm("CRCXORH equ 0798h");
+[; <" CRCXORH equ 0798h ;# ">
+"15456
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 15456: __asm("CRCCON0 equ 0799h");
+[; <" CRCCON0 equ 0799h ;# ">
+"15541
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 15541: __asm("CRCCON1 equ 079Ah");
+[; <" CRCCON1 equ 079Ah ;# ">
+"15681
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 15681: __asm("AT1RES equ 080Ch");
+[; <" AT1RES equ 080Ch ;# ">
+"15688
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 15688: __asm("AT1RESL equ 080Ch");
+[; <" AT1RESL equ 080Ch ;# ">
+"15800
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 15800: __asm("AT1RESH equ 080Dh");
+[; <" AT1RESH equ 080Dh ;# ">
+"15840
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 15840: __asm("AT1MISS equ 080Eh");
+[; <" AT1MISS equ 080Eh ;# ">
+"15847
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 15847: __asm("AT1MISSL equ 080Eh");
+[; <" AT1MISSL equ 080Eh ;# ">
+"15959
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 15959: __asm("AT1MISSH equ 080Fh");
+[; <" AT1MISSH equ 080Fh ;# ">
+"16071
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 16071: __asm("AT1PER equ 0810h");
+[; <" AT1PER equ 0810h ;# ">
+"16078
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 16078: __asm("AT1PERL equ 0810h");
+[; <" AT1PERL equ 0810h ;# ">
+"16240
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 16240: __asm("AT1PERH equ 0811h");
+[; <" AT1PERH equ 0811h ;# ">
+"16402
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 16402: __asm("AT1PHS equ 0812h");
+[; <" AT1PHS equ 0812h ;# ">
+"16409
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 16409: __asm("AT1PHSL equ 0812h");
+[; <" AT1PHSL equ 0812h ;# ">
+"16521
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 16521: __asm("AT1PHSH equ 0813h");
+[; <" AT1PHSH equ 0813h ;# ">
+"16575
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 16575: __asm("AT1CON0 equ 0814h");
+[; <" AT1CON0 equ 0814h ;# ">
+"16695
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 16695: __asm("AT1CON1 equ 0815h");
+[; <" AT1CON1 equ 0815h ;# ">
+"16775
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 16775: __asm("AT1IR0 equ 0816h");
+[; <" AT1IR0 equ 0816h ;# ">
+"16807
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 16807: __asm("AT1IE0 equ 0817h");
+[; <" AT1IE0 equ 0817h ;# ">
+"16839
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 16839: __asm("AT1IR1 equ 0818h");
+[; <" AT1IR1 equ 0818h ;# ">
+"16871
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 16871: __asm("AT1IE1 equ 0819h");
+[; <" AT1IE1 equ 0819h ;# ">
+"16903
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 16903: __asm("AT1STPT equ 081Ah");
+[; <" AT1STPT equ 081Ah ;# ">
+"16910
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 16910: __asm("AT1STPTL equ 081Ah");
+[; <" AT1STPTL equ 081Ah ;# ">
+"17022
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 17022: __asm("AT1STPTH equ 081Bh");
+[; <" AT1STPTH equ 081Bh ;# ">
+"17122
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 17122: __asm("AT1ERR equ 081Ch");
+[; <" AT1ERR equ 081Ch ;# ">
+"17129
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 17129: __asm("AT1ERRL equ 081Ch");
+[; <" AT1ERRL equ 081Ch ;# ">
+"17291
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 17291: __asm("AT1ERRH equ 081Dh");
+[; <" AT1ERRH equ 081Dh ;# ">
+"17453
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 17453: __asm("AT1CLK equ 088Ch");
+[; <" AT1CLK equ 088Ch ;# ">
+"17497
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 17497: __asm("AT1SIG equ 088Dh");
+[; <" AT1SIG equ 088Dh ;# ">
+"17565
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 17565: __asm("AT1CSEL1 equ 088Eh");
+[; <" AT1CSEL1 equ 088Eh ;# ">
+"17633
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 17633: __asm("AT1CC1 equ 088Fh");
+[; <" AT1CC1 equ 088Fh ;# ">
+"17640
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 17640: __asm("AT1CC1L equ 088Fh");
+[; <" AT1CC1L equ 088Fh ;# ">
+"17752
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 17752: __asm("AT1CC1H equ 0890h");
+[; <" AT1CC1H equ 0890h ;# ">
+"17792
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 17792: __asm("AT1CCON1 equ 0891h");
+[; <" AT1CCON1 equ 0891h ;# ">
+"17860
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 17860: __asm("AT1CSEL2 equ 0892h");
+[; <" AT1CSEL2 equ 0892h ;# ">
+"17928
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 17928: __asm("AT1CC2 equ 0893h");
+[; <" AT1CC2 equ 0893h ;# ">
+"17935
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 17935: __asm("AT1CC2L equ 0893h");
+[; <" AT1CC2L equ 0893h ;# ">
+"18047
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 18047: __asm("AT1CC2H equ 0894h");
+[; <" AT1CC2H equ 0894h ;# ">
+"18087
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 18087: __asm("AT1CCON2 equ 0895h");
+[; <" AT1CCON2 equ 0895h ;# ">
+"18155
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 18155: __asm("AT1CSEL3 equ 0896h");
+[; <" AT1CSEL3 equ 0896h ;# ">
+"18223
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 18223: __asm("AT1CC3 equ 0897h");
+[; <" AT1CC3 equ 0897h ;# ">
+"18230
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 18230: __asm("AT1CC3L equ 0897h");
+[; <" AT1CC3L equ 0897h ;# ">
+"18342
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 18342: __asm("AT1CC3H equ 0898h");
+[; <" AT1CC3H equ 0898h ;# ">
+"18382
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 18382: __asm("AT1CCON3 equ 0899h");
+[; <" AT1CCON3 equ 0899h ;# ">
+"18452
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 18452: __asm("SMT1TMR equ 0D8Ch");
+[; <" SMT1TMR equ 0D8Ch ;# ">
+"18459
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 18459: __asm("SMT1TMRL equ 0D8Ch");
+[; <" SMT1TMRL equ 0D8Ch ;# ">
+"18529
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 18529: __asm("SMT1TMRH equ 0D8Dh");
+[; <" SMT1TMRH equ 0D8Dh ;# ">
+"18599
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 18599: __asm("SMT1TMRU equ 0D8Eh");
+[; <" SMT1TMRU equ 0D8Eh ;# ">
+"18671
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 18671: __asm("SMT1CPR equ 0D8Fh");
+[; <" SMT1CPR equ 0D8Fh ;# ">
+"18678
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 18678: __asm("SMT1CPRL equ 0D8Fh");
+[; <" SMT1CPRL equ 0D8Fh ;# ">
+"18748
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 18748: __asm("SMT1CPRH equ 0D90h");
+[; <" SMT1CPRH equ 0D90h ;# ">
+"18818
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 18818: __asm("SMT1CPRU equ 0D91h");
+[; <" SMT1CPRU equ 0D91h ;# ">
+"18890
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 18890: __asm("SMT1CPW equ 0D92h");
+[; <" SMT1CPW equ 0D92h ;# ">
+"18897
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 18897: __asm("SMT1CPWL equ 0D92h");
+[; <" SMT1CPWL equ 0D92h ;# ">
+"18967
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 18967: __asm("SMT1CPWH equ 0D93h");
+[; <" SMT1CPWH equ 0D93h ;# ">
+"19037
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 19037: __asm("SMT1CPWU equ 0D94h");
+[; <" SMT1CPWU equ 0D94h ;# ">
+"19109
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 19109: __asm("SMT1PR equ 0D95h");
+[; <" SMT1PR equ 0D95h ;# ">
+"19116
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 19116: __asm("SMT1PRL equ 0D95h");
+[; <" SMT1PRL equ 0D95h ;# ">
+"19186
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 19186: __asm("SMT1PRH equ 0D96h");
+[; <" SMT1PRH equ 0D96h ;# ">
+"19256
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 19256: __asm("SMT1PRU equ 0D97h");
+[; <" SMT1PRU equ 0D97h ;# ">
+"19326
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 19326: __asm("SMT1CON0 equ 0D98h");
+[; <" SMT1CON0 equ 0D98h ;# ">
+"19391
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 19391: __asm("SMT1CON1 equ 0D99h");
+[; <" SMT1CON1 equ 0D99h ;# ">
+"19491
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 19491: __asm("SMT1STAT equ 0D9Ah");
+[; <" SMT1STAT equ 0D9Ah ;# ">
+"19581
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 19581: __asm("SMT1CLK equ 0D9Bh");
+[; <" SMT1CLK equ 0D9Bh ;# ">
+"19649
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 19649: __asm("SMT1SIG equ 0D9Ch");
+[; <" SMT1SIG equ 0D9Ch ;# ">
+"19741
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 19741: __asm("SMT1WIN equ 0D9Dh");
+[; <" SMT1WIN equ 0D9Dh ;# ">
+"19835
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 19835: __asm("SMT2TMR equ 0D9Eh");
+[; <" SMT2TMR equ 0D9Eh ;# ">
+"19842
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 19842: __asm("SMT2TMRL equ 0D9Eh");
+[; <" SMT2TMRL equ 0D9Eh ;# ">
+"19912
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 19912: __asm("SMT2TMRH equ 0D9Fh");
+[; <" SMT2TMRH equ 0D9Fh ;# ">
+"19982
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 19982: __asm("SMT2TMRU equ 0DA0h");
+[; <" SMT2TMRU equ 0DA0h ;# ">
+"20054
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 20054: __asm("SMT2CPR equ 0DA1h");
+[; <" SMT2CPR equ 0DA1h ;# ">
+"20061
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 20061: __asm("SMT2CPRL equ 0DA1h");
+[; <" SMT2CPRL equ 0DA1h ;# ">
+"20131
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 20131: __asm("SMT2CPRH equ 0DA2h");
+[; <" SMT2CPRH equ 0DA2h ;# ">
+"20201
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 20201: __asm("SMT2CPRU equ 0DA3h");
+[; <" SMT2CPRU equ 0DA3h ;# ">
+"20273
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 20273: __asm("SMT2CPW equ 0DA4h");
+[; <" SMT2CPW equ 0DA4h ;# ">
+"20280
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 20280: __asm("SMT2CPWL equ 0DA4h");
+[; <" SMT2CPWL equ 0DA4h ;# ">
+"20350
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 20350: __asm("SMT2CPWH equ 0DA5h");
+[; <" SMT2CPWH equ 0DA5h ;# ">
+"20420
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 20420: __asm("SMT2CPWU equ 0DA6h");
+[; <" SMT2CPWU equ 0DA6h ;# ">
+"20492
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 20492: __asm("SMT2PR equ 0DA7h");
+[; <" SMT2PR equ 0DA7h ;# ">
+"20499
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 20499: __asm("SMT2PRL equ 0DA7h");
+[; <" SMT2PRL equ 0DA7h ;# ">
+"20569
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 20569: __asm("SMT2PRH equ 0DA8h");
+[; <" SMT2PRH equ 0DA8h ;# ">
+"20639
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 20639: __asm("SMT2PRU equ 0DA9h");
+[; <" SMT2PRU equ 0DA9h ;# ">
+"20709
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 20709: __asm("SMT2CON0 equ 0DAAh");
+[; <" SMT2CON0 equ 0DAAh ;# ">
+"20774
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 20774: __asm("SMT2CON1 equ 0DABh");
+[; <" SMT2CON1 equ 0DABh ;# ">
+"20874
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 20874: __asm("SMT2STAT equ 0DACh");
+[; <" SMT2STAT equ 0DACh ;# ">
+"20964
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 20964: __asm("SMT2CLK equ 0DADh");
+[; <" SMT2CLK equ 0DADh ;# ">
+"21032
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 21032: __asm("SMT2SIG equ 0DAEh");
+[; <" SMT2SIG equ 0DAEh ;# ">
+"21124
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 21124: __asm("SMT2WIN equ 0DAFh");
+[; <" SMT2WIN equ 0DAFh ;# ">
+"21216
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 21216: __asm("PPSLOCK equ 0E0Fh");
+[; <" PPSLOCK equ 0E0Fh ;# ">
+"21236
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 21236: __asm("INTPPS equ 0E10h");
+[; <" INTPPS equ 0E10h ;# ">
+"21288
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 21288: __asm("T0CKIPPS equ 0E11h");
+[; <" T0CKIPPS equ 0E11h ;# ">
+"21340
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 21340: __asm("T1CKIPPS equ 0E12h");
+[; <" T1CKIPPS equ 0E12h ;# ">
+"21392
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 21392: __asm("T1GPPS equ 0E13h");
+[; <" T1GPPS equ 0E13h ;# ">
+"21444
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 21444: __asm("CCP1PPS equ 0E14h");
+[; <" CCP1PPS equ 0E14h ;# ">
+"21496
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 21496: __asm("CCP2PPS equ 0E15h");
+[; <" CCP2PPS equ 0E15h ;# ">
+"21548
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 21548: __asm("ATINPPS equ 0E16h");
+[; <" ATINPPS equ 0E16h ;# ">
+"21600
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 21600: __asm("CWG1INPPS equ 0E17h");
+[; <" CWG1INPPS equ 0E17h ;# ">
+"21605
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 21605: __asm("CWGINPPS equ 0E17h");
+[; <" CWGINPPS equ 0E17h ;# ">
+"21766
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 21766: __asm("T2CKIPPS equ 0E18h");
+[; <" T2CKIPPS equ 0E18h ;# ">
+"21771
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 21771: __asm("T2PPS equ 0E18h");
+[; <" T2PPS equ 0E18h ;# ">
+"21948
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 21948: __asm("T3CKIPPS equ 0E19h");
+[; <" T3CKIPPS equ 0E19h ;# ">
+"22000
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 22000: __asm("T3GPPS equ 0E1Ah");
+[; <" T3GPPS equ 0E1Ah ;# ">
+"22052
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 22052: __asm("T4CKIPPS equ 0E1Bh");
+[; <" T4CKIPPS equ 0E1Bh ;# ">
+"22057
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 22057: __asm("T4PPS equ 0E1Bh");
+[; <" T4PPS equ 0E1Bh ;# ">
+"22234
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 22234: __asm("T5CKIPPS equ 0E1Ch");
+[; <" T5CKIPPS equ 0E1Ch ;# ">
+"22286
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 22286: __asm("T5GPPS equ 0E1Dh");
+[; <" T5GPPS equ 0E1Dh ;# ">
+"22338
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 22338: __asm("T6CKIPPS equ 0E1Eh");
+[; <" T6CKIPPS equ 0E1Eh ;# ">
+"22343
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 22343: __asm("T6PPS equ 0E1Eh");
+[; <" T6PPS equ 0E1Eh ;# ">
+"22520
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 22520: __asm("ATCC1PPS equ 0E1Fh");
+[; <" ATCC1PPS equ 0E1Fh ;# ">
+"22572
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 22572: __asm("SSPCLKPPS equ 0E20h");
+[; <" SSPCLKPPS equ 0E20h ;# ">
+"22624
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 22624: __asm("SSPDATPPS equ 0E21h");
+[; <" SSPDATPPS equ 0E21h ;# ">
+"22676
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 22676: __asm("SSPSSPPS equ 0E22h");
+[; <" SSPSSPPS equ 0E22h ;# ">
+"22728
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 22728: __asm("ATCC2PPS equ 0E23h");
+[; <" ATCC2PPS equ 0E23h ;# ">
+"22780
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 22780: __asm("RXPPS equ 0E24h");
+[; <" RXPPS equ 0E24h ;# ">
+"22832
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 22832: __asm("CKPPS equ 0E25h");
+[; <" CKPPS equ 0E25h ;# ">
+"22884
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 22884: __asm("SMT1SIGPPS equ 0E26h");
+[; <" SMT1SIGPPS equ 0E26h ;# ">
+"22936
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 22936: __asm("SMT1WINPPS equ 0E27h");
+[; <" SMT1WINPPS equ 0E27h ;# ">
+"22988
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 22988: __asm("CLCIN0PPS equ 0E28h");
+[; <" CLCIN0PPS equ 0E28h ;# ">
+"23040
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 23040: __asm("CLCIN1PPS equ 0E29h");
+[; <" CLCIN1PPS equ 0E29h ;# ">
+"23092
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 23092: __asm("CLCIN2PPS equ 0E2Ah");
+[; <" CLCIN2PPS equ 0E2Ah ;# ">
+"23144
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 23144: __asm("CLCIN3PPS equ 0E2Bh");
+[; <" CLCIN3PPS equ 0E2Bh ;# ">
+"23196
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 23196: __asm("SMT2SIGPPS equ 0E2Ch");
+[; <" SMT2SIGPPS equ 0E2Ch ;# ">
+"23248
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 23248: __asm("SMT2WINPPS equ 0E2Dh");
+[; <" SMT2WINPPS equ 0E2Dh ;# ">
+"23300
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 23300: __asm("ATCC3PPS equ 0E2Eh");
+[; <" ATCC3PPS equ 0E2Eh ;# ">
+"23352
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 23352: __asm("RA0PPS equ 0E90h");
+[; <" RA0PPS equ 0E90h ;# ">
+"23396
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 23396: __asm("RA1PPS equ 0E91h");
+[; <" RA1PPS equ 0E91h ;# ">
+"23440
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 23440: __asm("RA2PPS equ 0E92h");
+[; <" RA2PPS equ 0E92h ;# ">
+"23484
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 23484: __asm("RA4PPS equ 0E94h");
+[; <" RA4PPS equ 0E94h ;# ">
+"23528
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 23528: __asm("RA5PPS equ 0E95h");
+[; <" RA5PPS equ 0E95h ;# ">
+"23572
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 23572: __asm("RB4PPS equ 0E9Ch");
+[; <" RB4PPS equ 0E9Ch ;# ">
+"23616
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 23616: __asm("RB5PPS equ 0E9Dh");
+[; <" RB5PPS equ 0E9Dh ;# ">
+"23660
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 23660: __asm("RB6PPS equ 0E9Eh");
+[; <" RB6PPS equ 0E9Eh ;# ">
+"23704
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 23704: __asm("RB7PPS equ 0E9Fh");
+[; <" RB7PPS equ 0E9Fh ;# ">
+"23748
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 23748: __asm("RC0PPS equ 0EA0h");
+[; <" RC0PPS equ 0EA0h ;# ">
+"23792
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 23792: __asm("RC1PPS equ 0EA1h");
+[; <" RC1PPS equ 0EA1h ;# ">
+"23836
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 23836: __asm("RC2PPS equ 0EA2h");
+[; <" RC2PPS equ 0EA2h ;# ">
+"23880
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 23880: __asm("RC3PPS equ 0EA3h");
+[; <" RC3PPS equ 0EA3h ;# ">
+"23924
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 23924: __asm("RC4PPS equ 0EA4h");
+[; <" RC4PPS equ 0EA4h ;# ">
+"23968
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 23968: __asm("RC5PPS equ 0EA5h");
+[; <" RC5PPS equ 0EA5h ;# ">
+"24012
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 24012: __asm("RC6PPS equ 0EA6h");
+[; <" RC6PPS equ 0EA6h ;# ">
+"24056
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 24056: __asm("RC7PPS equ 0EA7h");
+[; <" RC7PPS equ 0EA7h ;# ">
+"24100
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 24100: __asm("CLCDATA equ 0F0Fh");
+[; <" CLCDATA equ 0F0Fh ;# ">
+"24138
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 24138: __asm("CLC1CON equ 0F10h");
+[; <" CLC1CON equ 0F10h ;# ">
+"24256
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 24256: __asm("CLC1POL equ 0F11h");
+[; <" CLC1POL equ 0F11h ;# ">
+"24334
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 24334: __asm("CLC1SEL0 equ 0F12h");
+[; <" CLC1SEL0 equ 0F12h ;# ">
+"24438
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 24438: __asm("CLC1SEL1 equ 0F13h");
+[; <" CLC1SEL1 equ 0F13h ;# ">
+"24542
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 24542: __asm("CLC1SEL2 equ 0F14h");
+[; <" CLC1SEL2 equ 0F14h ;# ">
+"24646
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 24646: __asm("CLC1SEL3 equ 0F15h");
+[; <" CLC1SEL3 equ 0F15h ;# ">
+"24750
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 24750: __asm("CLC1GLS0 equ 0F16h");
+[; <" CLC1GLS0 equ 0F16h ;# ">
+"24862
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 24862: __asm("CLC1GLS1 equ 0F17h");
+[; <" CLC1GLS1 equ 0F17h ;# ">
+"24974
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 24974: __asm("CLC1GLS2 equ 0F18h");
+[; <" CLC1GLS2 equ 0F18h ;# ">
+"25086
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 25086: __asm("CLC1GLS3 equ 0F19h");
+[; <" CLC1GLS3 equ 0F19h ;# ">
+"25198
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 25198: __asm("CLC2CON equ 0F1Ah");
+[; <" CLC2CON equ 0F1Ah ;# ">
+"25316
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 25316: __asm("CLC2POL equ 0F1Bh");
+[; <" CLC2POL equ 0F1Bh ;# ">
+"25394
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 25394: __asm("CLC2SEL0 equ 0F1Ch");
+[; <" CLC2SEL0 equ 0F1Ch ;# ">
+"25498
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 25498: __asm("CLC2SEL1 equ 0F1Dh");
+[; <" CLC2SEL1 equ 0F1Dh ;# ">
+"25602
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 25602: __asm("CLC2SEL2 equ 0F1Eh");
+[; <" CLC2SEL2 equ 0F1Eh ;# ">
+"25706
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 25706: __asm("CLC2SEL3 equ 0F1Fh");
+[; <" CLC2SEL3 equ 0F1Fh ;# ">
+"25810
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 25810: __asm("CLC2GLS0 equ 0F20h");
+[; <" CLC2GLS0 equ 0F20h ;# ">
+"25922
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 25922: __asm("CLC2GLS1 equ 0F21h");
+[; <" CLC2GLS1 equ 0F21h ;# ">
+"26034
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 26034: __asm("CLC2GLS2 equ 0F22h");
+[; <" CLC2GLS2 equ 0F22h ;# ">
+"26146
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 26146: __asm("CLC2GLS3 equ 0F23h");
+[; <" CLC2GLS3 equ 0F23h ;# ">
+"26258
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 26258: __asm("CLC3CON equ 0F24h");
+[; <" CLC3CON equ 0F24h ;# ">
+"26376
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 26376: __asm("CLC3POL equ 0F25h");
+[; <" CLC3POL equ 0F25h ;# ">
+"26454
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 26454: __asm("CLC3SEL0 equ 0F26h");
+[; <" CLC3SEL0 equ 0F26h ;# ">
+"26558
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 26558: __asm("CLC3SEL1 equ 0F27h");
+[; <" CLC3SEL1 equ 0F27h ;# ">
+"26662
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 26662: __asm("CLC3SEL2 equ 0F28h");
+[; <" CLC3SEL2 equ 0F28h ;# ">
+"26766
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 26766: __asm("CLC3SEL3 equ 0F29h");
+[; <" CLC3SEL3 equ 0F29h ;# ">
+"26870
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 26870: __asm("CLC3GLS0 equ 0F2Ah");
+[; <" CLC3GLS0 equ 0F2Ah ;# ">
+"26982
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 26982: __asm("CLC3GLS1 equ 0F2Bh");
+[; <" CLC3GLS1 equ 0F2Bh ;# ">
+"27094
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 27094: __asm("CLC3GLS2 equ 0F2Ch");
+[; <" CLC3GLS2 equ 0F2Ch ;# ">
+"27206
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 27206: __asm("CLC3GLS3 equ 0F2Dh");
+[; <" CLC3GLS3 equ 0F2Dh ;# ">
+"27318
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 27318: __asm("CLC4CON equ 0F2Eh");
+[; <" CLC4CON equ 0F2Eh ;# ">
+"27436
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 27436: __asm("CLC4POL equ 0F2Fh");
+[; <" CLC4POL equ 0F2Fh ;# ">
+"27514
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 27514: __asm("CLC4SEL0 equ 0F30h");
+[; <" CLC4SEL0 equ 0F30h ;# ">
+"27618
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 27618: __asm("CLC4SEL1 equ 0F31h");
+[; <" CLC4SEL1 equ 0F31h ;# ">
+"27722
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 27722: __asm("CLC4SEL2 equ 0F32h");
+[; <" CLC4SEL2 equ 0F32h ;# ">
+"27826
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 27826: __asm("CLC4SEL3 equ 0F33h");
+[; <" CLC4SEL3 equ 0F33h ;# ">
+"27930
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 27930: __asm("CLC4GLS0 equ 0F34h");
+[; <" CLC4GLS0 equ 0F34h ;# ">
+"28042
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 28042: __asm("CLC4GLS1 equ 0F35h");
+[; <" CLC4GLS1 equ 0F35h ;# ">
+"28154
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 28154: __asm("CLC4GLS2 equ 0F36h");
+[; <" CLC4GLS2 equ 0F36h ;# ">
+"28266
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 28266: __asm("CLC4GLS3 equ 0F37h");
+[; <" CLC4GLS3 equ 0F37h ;# ">
+"28378
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 28378: __asm("STATUS_SHAD equ 0FE4h");
+[; <" STATUS_SHAD equ 0FE4h ;# ">
+"28410
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 28410: __asm("WREG_SHAD equ 0FE5h");
+[; <" WREG_SHAD equ 0FE5h ;# ">
+"28430
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 28430: __asm("BSR_SHAD equ 0FE6h");
+[; <" BSR_SHAD equ 0FE6h ;# ">
+"28450
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 28450: __asm("PCLATH_SHAD equ 0FE7h");
+[; <" PCLATH_SHAD equ 0FE7h ;# ">
+"28470
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 28470: __asm("FSR0L_SHAD equ 0FE8h");
+[; <" FSR0L_SHAD equ 0FE8h ;# ">
+"28490
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 28490: __asm("FSR0H_SHAD equ 0FE9h");
+[; <" FSR0H_SHAD equ 0FE9h ;# ">
+"28510
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 28510: __asm("FSR1L_SHAD equ 0FEAh");
+[; <" FSR1L_SHAD equ 0FEAh ;# ">
+"28530
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 28530: __asm("FSR1H_SHAD equ 0FEBh");
+[; <" FSR1H_SHAD equ 0FEBh ;# ">
+"28550
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 28550: __asm("STKPTR equ 0FEDh");
+[; <" STKPTR equ 0FEDh ;# ">
+"28570
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 28570: __asm("TOSL equ 0FEEh");
+[; <" TOSL equ 0FEEh ;# ">
+"28590
+[; ;C:/Users/admin/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.10.270/xc8\pic\include\proc/pic16f1619.h: 28590: __asm("TOSH equ 0FEFh");
+[; <" TOSH equ 0FEFh ;# ">
+[v $root$_main `(v ~T0 @X0 0 e ]
+"49 main.c
+[; ;main.c: 49: void main(void)
+[v _main `(v ~T0 @X0 1 ef ]
+"50
+[; ;main.c: 50: {
+{
+[e :U _main ]
+[f ]
+"52
+[; ;main.c: 52:     SYSTEM_Initialize();
+[e ( _SYSTEM_Initialize ..  ]
+"54
+[; ;main.c: 54:     LCD_Init();
+[e ( _LCD_Init ..  ]
+"57
+[; ;main.c: 57:     (INTCONbits.GIE = 1);
+[e = . . _INTCONbits 0 7 -> -> 1 `i `uc ]
+"59
+[; ;main.c: 59:     (INTCONbits.PEIE = 1);
+[e = . . _INTCONbits 0 6 -> -> 1 `i `uc ]
+"61
+[; ;main.c: 61:     LCD_Typewriter(0, 0, "JanCulator 3000", 150);
+[e ( _LCD_Typewriter (4 , , , -> -> 0 `i `uc -> -> 0 `i `uc :s 1C -> -> 150 `i `us ]
+"62
+[; ;main.c: 62:     LCD_Typewriter(1, 0, "1+1=???   3", 150);
+[e ( _LCD_Typewriter (4 , , , -> -> 1 `i `uc -> -> 0 `i `uc :s 2C -> -> 150 `i `us ]
+"64
+[; ;main.c: 64:     while (1)
+[e :U 1273 ]
+"65
+[; ;main.c: 65:     {
+{
+"67
+[; ;main.c: 67:     }
+}
+[e :U 1272 ]
+[e $U 1273  ]
+[e :U 1274 ]
+"68
+[; ;main.c: 68: }
+[e :UE 1271 ]
+}
+[a 2C 49 43 49 61 63 63 63 32 32 32 51 0 ]
+[a 1C 74 97 110 67 117 108 97 116 111 114 32 51 48 48 48 0 ]
